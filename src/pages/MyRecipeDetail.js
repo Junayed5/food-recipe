@@ -6,7 +6,7 @@ const MyRecipeDetail = ({ recipe }) => {
     const [modal, setModal] = useState(false);
 
     const handleDelete = id => {
-        fetch(`http://localhost:5000/recipe/${id}`, {
+        fetch(`https://food-recipe-lzw1.onrender.com/recipe/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json()) // or res.json()

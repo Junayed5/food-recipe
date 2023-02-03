@@ -5,7 +5,7 @@ const AllRecipes = () => {
 
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/recipes')
+        fetch('https://food-recipe-lzw1.onrender.com/recipes')
             .then(res => res.json())
             .then(data => setRecipes(data))
     }, [recipes])

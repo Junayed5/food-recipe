@@ -18,7 +18,7 @@ const AddRecipe = () => {
 
         const data = { name, img, ingredients, steps, description, email };
 
-        fetch('http://localhost:5000/recipe', {
+        fetch('https://food-recipe-lzw1.onrender.com/recipe', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

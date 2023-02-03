@@ -11,7 +11,7 @@ const MyRecipe = () => {
 
     const [myRecipes, setMyRecipes] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/my-recipe/${email}`)
+        fetch(`https://food-recipe-lzw1.onrender.com/my-recipe/${email}`)
             .then(res => res.json())
             .then(data => setMyRecipes(data))
     }, [myRecipes])

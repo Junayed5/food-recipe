@@ -12,7 +12,7 @@ const UpdateModal = ({id}) => {
 
         const data = { name, img, ingredients, steps, description };
 
-        fetch(`http://localhost:5000/recipe/${id}`, {
+        fetch(`https://food-recipe-lzw1.onrender.com/recipe/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8' 

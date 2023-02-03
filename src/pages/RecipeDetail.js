@@ -10,7 +10,7 @@ const RecipeDetail = () => {
 
     const { img, name, description, ingredients, steps } = recipe
     useEffect(() => {
-        fetch(`http://localhost:5000/recipe/${id}`)
+        fetch(`https://food-recipe-lzw1.onrender.com/recipe/${id}`)
             .then(res => res.json())
             .then(data => setRecipe(data))
     }, [])
